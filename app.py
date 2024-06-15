@@ -21,10 +21,11 @@ def recognize_digit(image):
 
 with gr.Blocks() as demo:
     gr.HTML("<center><h1>Real-Time Digit Recognition System</h1></center>")
-    gr.HTML("<center>Author: <a href='#'>Ahmudul Hossain</a></center>")
+    gr.HTML(
+        "<center>Author: <a href='https://github.com/ahmud-z'>Ahmudul Hossain</a></center>"
+    )
     gr.HTML("<center><p>Student ID: 213002200</p></center>")
     gr.HTML("<center><p>Dept. of CSE (GUB)</p></center>")
-    
 
     gr.Interface(
         fn=recognize_digit,
